@@ -1,0 +1,220 @@
+{
+  "config": {
+    "configFile": "c:\\Development\\commercePoc\\playwright.config.ts",
+    "rootDir": "c:/Development/commercePoc/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "dot",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "jsonReports/jsonReport.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "open": "always"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "c:/Development/commercePoc/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "c:/Development/commercePoc/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.33.0",
+    "workers": 1,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "signUp12MonthsTest.spec.ts",
+      "file": "signUp12MonthsTest.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "signUp12MonthsTest",
+          "ok": true,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "passed",
+                  "duration": 9983,
+                  "errors": [],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-05-25T04:23:12.436Z",
+                  "attachments": []
+                }
+              ],
+              "status": "expected"
+            }
+          ],
+          "id": "8300daeafc1cd74cc280-67c34f1efbde978ca496",
+          "file": "signUp12MonthsTest.spec.ts",
+          "line": 10,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "test-1.spec.ts",
+      "file": "test-1.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "status": "failed",
+                  "duration": 14467,
+                  "error": {
+                    "message": "locator.click: Target closed\n=========================== logs ===========================\nwaiting for getByRole('link', { name: 'Samsung You Choose' })\n============================================================",
+                    "stack": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for getByRole('link', { name: 'Samsung You Choose' })\n============================================================\n    at c:\\Development\\commercePoc\\tests\\test-1.spec.ts:11:64",
+                    "snippet": "   9 |   await page.getByRole('link', { name: 'Deals' }).click();\n  10 |   // Find the button SYC and click on it\n> 11 |   await page.getByRole('link', { name: 'Samsung You Choose' }).click();\n     |                                                                ^\n  12 |   // Locate the address finder to enter a new address\n  13 |   await page.getByPlaceholder('e.g. 123 Long Street, Brooklyn, Wellington').click();\n  14 |   // Enter the address await page.getByPlaceholder('e.g. 123 Long Street, Brooklyn, Wellington').click();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "c:\\Development\\commercePoc\\tests\\test-1.spec.ts",
+                        "column": 64,
+                        "line": 11
+                      },
+                      "message": "Error: locator.click: Target closed\n=========================== logs ===========================\nwaiting for getByRole('link', { name: 'Samsung You Choose' })\n============================================================\n\n   9 |   await page.getByRole('link', { name: 'Deals' }).click();\n  10 |   // Find the button SYC and click on it\n> 11 |   await page.getByRole('link', { name: 'Samsung You Choose' }).click();\n     |                                                                ^\n  12 |   // Locate the address finder to enter a new address\n  13 |   await page.getByPlaceholder('e.g. 123 Long Street, Brooklyn, Wellington').click();\n  14 |   // Enter the address await page.getByPlaceholder('e.g. 123 Long Street, Brooklyn, Wellington').click();\n\n\u001b[2m    at c:\\Development\\commercePoc\\tests\\test-1.spec.ts:11:64\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-05-25T04:23:23.056Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "c:\\Development\\commercePoc\\tests\\test-1.spec.ts",
+                    "column": 64,
+                    "line": 11
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "492d4a3e7e76c4aacf4a-34ab2a399aed0b8eb826",
+          "file": "test-1.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    },
+    {
+      "title": "test-2.spec.ts",
+      "file": "test-2.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "test",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 30000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 1,
+                  "status": "failed",
+                  "duration": 2392,
+                  "error": {
+                    "message": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://www.dexwebsiteuat.tpower.net.nz/\", waiting until \"load\"\n============================================================",
+                    "stack": "Error: page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://www.dexwebsiteuat.tpower.net.nz/\", waiting until \"load\"\n============================================================\n    at c:\\Development\\commercePoc\\tests\\test-2.spec.ts:4:14",
+                    "snippet": "  2 |\n  3 | test('test', async ({ page }) => {\n> 4 |   await page.goto('https://www.dexwebsiteuat.tpower.net.nz/');\n    |              ^\n  5 |   await page.locator('#mcy_mobileNavSection').getByRole('link', { name: 'Electricity' }).click();\n  6 |   await page.locator('#mcy_mobileNavSection').getByRole('link', { name: 'Gas' }).click();\n  7 |   await page.locator('#mcy_mobileNavSection').getByRole('link', { name: 'Broadband' }).click();"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "c:\\Development\\commercePoc\\tests\\test-2.spec.ts",
+                        "column": 14,
+                        "line": 4
+                      },
+                      "message": "Error: page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://www.dexwebsiteuat.tpower.net.nz/\", waiting until \"load\"\n============================================================\n\n  2 |\n  3 | test('test', async ({ page }) => {\n> 4 |   await page.goto('https://www.dexwebsiteuat.tpower.net.nz/');\n    |              ^\n  5 |   await page.locator('#mcy_mobileNavSection').getByRole('link', { name: 'Electricity' }).click();\n  6 |   await page.locator('#mcy_mobileNavSection').getByRole('link', { name: 'Gas' }).click();\n  7 |   await page.locator('#mcy_mobileNavSection').getByRole('link', { name: 'Broadband' }).click();\n\n\u001b[2m    at c:\\Development\\commercePoc\\tests\\test-2.spec.ts:4:14\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2023-05-25T04:23:38.371Z",
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "c:\\Development\\commercePoc\\tests\\test-2.spec.ts",
+                    "column": 14,
+                    "line": 4
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "b0639a757ff76b21cdba-ef10cfa7ec7e1428db71",
+          "file": "test-2.spec.ts",
+          "line": 3,
+          "column": 5
+        }
+      ]
+    }
+  ],
+  "errors": []
+}
